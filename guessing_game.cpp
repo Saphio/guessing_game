@@ -23,7 +23,7 @@ int main () {
     // input
     num = rand() % 101;
     // debugging:
-    cout << num << endl;
+    // cout << num << endl;
     int guess;
     int tries = 1;
     cout << "Enter a number between 0 and 100." << endl;
@@ -31,6 +31,7 @@ int main () {
 
     // guess is incorrect
     while (guess != num) {
+      // give appropriate hint
       if (guess > num) {
 	cout << "Too high." << endl;
       }
@@ -38,6 +39,7 @@ int main () {
 	cout << "Too low." << endl;
       }
       cout << "Try again!" << endl;
+      // add one to attempts
       tries ++;
       cin >> guess;
     }
@@ -51,6 +53,8 @@ int main () {
       else {
 	cout << "It took you " << tries << " guesses." << endl;
       }
+
+      // playing again
       cout << "Play again? (y/n)" << endl;
       char again;
       cin >> again;
