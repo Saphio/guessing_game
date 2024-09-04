@@ -62,4 +62,6 @@ int main () {
       if (again == 'n') { isPlaying = false; }
     }
   }
+
+  return 0;
 }
